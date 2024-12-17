@@ -13,7 +13,7 @@
             <div class="d-flex align-items-center">
             <a href="/about" class="text-decoration-none text-dark d-flex align-items-center me-3 text-white">
                 <i class="bi bi-subtract me-1"></i> MyUMKO
-            </a>
+            </a>    
             <a href="/" class="text-decoration-none text-dark d-flex align-items-center me-3 text-white">
                 |
             </a>
