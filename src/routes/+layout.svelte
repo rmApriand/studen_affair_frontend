@@ -4,7 +4,7 @@
     import Footer from '../widgets/Footer.svelte';
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar-dark bg-primary">
     <Navbar></Navbar>
 </nav>
 

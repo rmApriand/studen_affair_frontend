@@ -21,4 +21,119 @@ $secondary:                 #ffd333;
 $navbar-dark-color:                 $white;
 $navbar-dark-hover-color:           $secondary;
 $navbar-nav-link-padding-x:         .85rem !default;
+$theme-primary:                     $primary;
+$theme-primary-light:               lighten($primary, 10%);
+$yellow:                            $secondary;
+$orange:                             #ffa500;
 
+// Typography
+$font-family-monospace: "Courier New", Courier, monospace !default;
+
+//navbar
+.navbar-dark {
+    background-color: $theme-primary;
+    .nav-link {
+        color: $white;
+        &:hover {
+            color: $yellow;
+        }
+    }
+    .dropdown-menu {
+        background-color: $white;
+        border: none;
+        right: auto;
+        margin-top: 0.25rem;
+        position: absolute;
+        left: 20;
+        .dropdown-item {
+            color: $black;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: $gray-200;
+            }
+        }
+        .dropdown-item-kotak {
+            padding: 0.5rem 1rem; 
+            margin: 0.25rem; 
+            color: $yellow;
+            background-color: $primary;
+            border-radius: 0.25rem; 
+            transition: background-color 0.3s;
+            text-decoration: none;
+        
+            &:hover {
+                background-color: $theme-primary-light; 
+            }
+        
+            &:last-child {
+                margin-bottom: 0; 
+            }
+        }
+        .dropdown-item-text-kotak {
+            color: $primary;
+            margin: 0.25rem; 
+            text-decoration: none;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: $gray-200;
+            }
+        }
+    }
+}
+
+nav.navbar {
+    padding: 1rem 0rem; 
+}
+
+.py-3 {
+    background-color: $theme-primary;
+    .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+.flag {
+    border: 1px solid $orange;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+
+.bg-theme {
+    background-color: $theme-primary;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+    color: $black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.text-theme {
+    color: $theme-primary;
+}
+
+.btn-theme {
+    background-color: $theme-primary;
+    color: $white;
+    border: none;
+    &:hover {
+        background-color: $theme-primary-light;
+    }
+}
+
+//responsif
+@media (max-width: 768px) {
+    .primary .container-fluid {
+        flex-direction: column;
+        text-align: center;
+    }
+}
