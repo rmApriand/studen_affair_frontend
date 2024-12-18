@@ -1,0 +1,6 @@
+git status
+git add src/app.html
+git add src/widgets/Navbar.svelte
+git status
+git commit -m "Menambahkan file Navbar.svelte ke dalam staging area"
+git push origin main
